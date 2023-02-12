@@ -9,7 +9,8 @@ public class CreditCard {
     double balance;
     double interest;
 
-    void calculateInterest(double balance,double interest){
+
+    public void calculateInterest(double balance, double interest){
         this.balance=balance;
         this.interest=interest;
         System.out.println("The interest rate on the balance of "+balance+" based on interest rate "+interest+" is"+(balance*interest)/(100));
@@ -20,7 +21,7 @@ class Visa extends CreditCard{
 }
 class AX extends CreditCard{
     @Override
-    void calculateInterest(double balance,double interest){
+    public void calculateInterest(double balance,double interest){
         super.balance=balance;
         super.interest=interest;
 
